@@ -1,0 +1,31 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="bukus">
+            <h2><span jhiTranslate="pustakaApp.bukus.detail.title">Bukus</span> {{bukus.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="pustakaApp.bukus.nama">Nama</span></dt>
+                <dd>
+                    <span>{{bukus.nama}}</span>
+                </dd>
+                <dt><span jhiTranslate="pustakaApp.bukus.pengarang">Pengarang</span></dt>
+                <dd>
+                    <span>{{bukus.pengarang}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/bukus', bukus.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

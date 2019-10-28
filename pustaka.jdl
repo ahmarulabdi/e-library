@@ -1,0 +1,17 @@
+
+entity Anggotas{
+	nama String required
+}
+entity Bukus{
+	nama String required,
+    pengarang String required
+}
+entity Transaksis {
+	tanggalPinjam LocalDate,
+    tanggalKembali LocalDate
+}
+relationship ManyToOne {
+    Transaksis{user(login)} to User,
+    Transaksis{anggotas(nama)} to Anggotas,
+    Transaksis{bukus(nama)} to Bukus
+}

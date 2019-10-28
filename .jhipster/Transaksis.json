@@ -1,0 +1,46 @@
+{
+    "name": "Transaksis",
+    "fields": [
+        {
+            "fieldName": "tanggalPinjam",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "tanggalKembali",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "transaksis",
+            "relationshipName": "user",
+            "otherEntityField": "login"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "anggotas",
+            "otherEntityRelationshipName": "transaksis",
+            "relationshipName": "anggotas",
+            "otherEntityField": "nama"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "bukus",
+            "otherEntityRelationshipName": "transaksis",
+            "relationshipName": "bukus",
+            "otherEntityField": "nama"
+        }
+    ],
+    "changelogDate": "20191028103628",
+    "entityTableName": "transaksis",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

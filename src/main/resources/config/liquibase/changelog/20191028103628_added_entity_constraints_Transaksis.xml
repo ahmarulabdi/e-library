@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity Transaksis.
+    -->
+    <changeSet id="20191028103628-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="transaksis"
+                                 constraintName="fk_transaksis_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="jhi_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="anggotas_id"
+                                 baseTableName="transaksis"
+                                 constraintName="fk_transaksis_anggotas_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="anggotas"/>
+
+        <addForeignKeyConstraint baseColumnNames="bukus_id"
+                                 baseTableName="transaksis"
+                                 constraintName="fk_transaksis_bukus_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bukus"/>
+
+    </changeSet>
+</databaseChangeLog>

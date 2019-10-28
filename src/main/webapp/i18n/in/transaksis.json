@@ -1,0 +1,26 @@
+{
+  "pustakaApp": {
+    "transaksis": {
+      "home": {
+        "title": "Transakses",
+        "createLabel": "Buat Transaksis baru",
+        "createOrEditLabel": "Buat atau edit Transaksis",
+        "notFound": "No Transakses found"
+      },
+      "created": "Transaksis dengan id {{ param }} telah dibuat",
+      "updated": "Transaksis dengan id {{ param }} telah diperbaharui",
+      "deleted": "Transaksis dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Transaksis {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaksis"
+      },
+      "tanggalPinjam": "Tanggal Pinjam",
+      "tanggalKembali": "Tanggal Kembali",
+      "user": "User",
+      "anggotas": "Anggotas",
+      "bukus": "Bukus"
+    }
+  }
+}

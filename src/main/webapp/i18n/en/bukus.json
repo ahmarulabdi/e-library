@@ -1,0 +1,23 @@
+{
+  "pustakaApp": {
+    "bukus": {
+      "home": {
+        "title": "Bukuses",
+        "createLabel": "Create a new Bukus",
+        "createOrEditLabel": "Create or edit a Bukus",
+        "notFound": "No Bukuses found"
+      },
+      "created": "A new Bukus is created with identifier {{ param }}",
+      "updated": "A Bukus is updated with identifier {{ param }}",
+      "deleted": "A Bukus is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bukus {{ id }}?"
+      },
+      "detail": {
+        "title": "Bukus"
+      },
+      "nama": "Nama",
+      "pengarang": "Pengarang"
+    }
+  }
+}

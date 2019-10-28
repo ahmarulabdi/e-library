@@ -1,0 +1,22 @@
+{
+  "pustakaApp": {
+    "anggotas": {
+      "home": {
+        "title": "Anggotas",
+        "createLabel": "Buat Anggotas baru",
+        "createOrEditLabel": "Buat atau edit Anggotas",
+        "notFound": "No Anggotas found"
+      },
+      "created": "Anggotas dengan id {{ param }} telah dibuat",
+      "updated": "Anggotas dengan id {{ param }} telah diperbaharui",
+      "deleted": "Anggotas dengan id {{ param }} telah dihapus",
+      "delete": {
+        "question": "Apakah anda yakin ingin menghapus Anggotas {{ id }}?"
+      },
+      "detail": {
+        "title": "Anggotas"
+      },
+      "nama": "Nama"
+    }
+  }
+}
