@@ -1,0 +1,42 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.jhipster.pustaka",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "pustaka",
+    "packageName": "com.jhipster.pustaka",
+    "packageFolder": "com/jhipster/pustaka",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mariadb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "Y2VkNWU2ODY2NTZjZmYxZmRiNGRlYTBiZjhiMzQ1Mjc3NzUxZjc5ZjVmZDgxMjNhZjM2YWExNTY3ZGNiYWZkZmZlMTYwOTNmOGIxNjkxZTFkZTRlNjczNmUzNzkwNmVlZDViMmFkMWI5NmVhODQyYjZlMTBlMDY0NTI1Yjg4OWM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "testFrameworks": ["protractor"],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "in"],
+    "blueprints": []
+  }
+}
