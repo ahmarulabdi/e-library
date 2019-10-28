@@ -2,10 +2,10 @@
   "pustakaApp": {
     "transaksis": {
       "home": {
-        "title": "Transakses",
+        "title": "Transaksis",
         "createLabel": "Create a new Transaksis",
         "createOrEditLabel": "Create or edit a Transaksis",
-        "notFound": "No Transakses found"
+        "notFound": "No Transaksis found"
       },
       "created": "A new Transaksis is created with identifier {{ param }}",
       "updated": "A Transaksis is updated with identifier {{ param }}",

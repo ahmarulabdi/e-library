@@ -45,7 +45,7 @@ public class TransaksisResource {
      * @return the {@link ResponseEntity} with status {@code 201 (Created)} and with body the new transaksis, or with status {@code 400 (Bad Request)} if the transaksis has already an ID.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PostMapping("/transakses")
+    @PostMapping("/transaksis")
     public ResponseEntity<Transaksis> createTransaksis(@RequestBody Transaksis transaksis) throws URISyntaxException {
         log.debug("REST request to save Transaksis : {}", transaksis);
         if (transaksis.getId() != null) {
@@ -58,7 +58,7 @@ public class TransaksisResource {
     }
 
     /**
-     * {@code PUT  /transakses} : Updates an existing transaksis.
+     * {@code PUT  /transaksis} : Updates an existing transaksis.
      *
      * @param transaksis the transaksis to update.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the updated transaksis,
@@ -66,7 +66,7 @@ public class TransaksisResource {
      * or with status {@code 500 (Internal Server Error)} if the transaksis couldn't be updated.
      * @throws URISyntaxException if the Location URI syntax is incorrect.
      */
-    @PutMapping("/transakses")
+    @PutMapping("/transaksis")
     public ResponseEntity<Transaksis> updateTransaksis(@RequestBody Transaksis transaksis) throws URISyntaxException {
         log.debug("REST request to update Transaksis : {}", transaksis);
         if (transaksis.getId() == null) {
@@ -79,24 +79,24 @@ public class TransaksisResource {
     }
 
     /**
-     * {@code GET  /transakses} : get all the transakses.
+     * {@code GET  /transakses} : get all the transaksipustaka.jss.
      *
 
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and the list of transakses in body.
      */
-    @GetMapping("/transakses")
-    public List<Transaksis> getAllTransakses() {
-        log.debug("REST request to get all Transakses");
-        return transaksisRepository.findAll();
+    @GetMapping("/transaksis")
+    public List<Transaksis> getAllTransaksis() {
+        log.debug("REST request to get all Transaksis");
+        return transaksisRepository.findByUserIsCurrentUser();
     }
 
     /**
-     * {@code GET  /transakses/:id} : get the "id" transaksis.
+     * {@code GET  /transaksis/:id} : get the "id" transaksis.
      *
      * @param id the id of the transaksis to retrieve.
      * @return the {@link ResponseEntity} with status {@code 200 (OK)} and with body the transaksis, or with status {@code 404 (Not Found)}.
      */
-    @GetMapping("/transakses/{id}")
+    @GetMapping("/transaksis/{id}")
     public ResponseEntity<Transaksis> getTransaksis(@PathVariable Long id) {
         log.debug("REST request to get Transaksis : {}", id);
         Optional<Transaksis> transaksis = transaksisRepository.findById(id);
@@ -104,12 +104,12 @@ public class TransaksisResource {
     }
 
     /**
-     * {@code DELETE  /transakses/:id} : delete the "id" transaksis.
+     * {@code DELETE  /transaksis/:id} : delete the "id" transaksis.
      *
      * @param id the id of the transaksis to delete.
      * @return the {@link ResponseEntity} with status {@code 204 (NO_CONTENT)}.
      */
-    @DeleteMapping("/transakses/{id}")
+    @DeleteMapping("/transaksis/{id}")
     public ResponseEntity<Void> deleteTransaksis(@PathVariable Long id) {
         log.debug("REST request to delete Transaksis : {}", id);
         transaksisRepository.deleteById(id);

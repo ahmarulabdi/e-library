@@ -2,10 +2,10 @@
   "pustakaApp": {
     "transaksis": {
       "home": {
-        "title": "Transakses",
+        "title": "Transaksis",
         "createLabel": "Buat Transaksis baru",
         "createOrEditLabel": "Buat atau edit Transaksis",
-        "notFound": "No Transakses found"
+        "notFound": "No Transaksis found"
       },
       "created": "Transaksis dengan id {{ param }} telah dibuat",
       "updated": "Transaksis dengan id {{ param }} telah diperbaharui",
