@@ -11,7 +11,7 @@ entity Transaksis {
     tanggalKembali LocalDate
 }
 relationship ManyToOne {
-    Transaksis{user(login)} to User,
+    Transaksis{user(login)} to User,rea
     Transaksis{anggotas(nama)} to Anggotas,
     Transaksis{bukus(nama)} to Bukus
 }
